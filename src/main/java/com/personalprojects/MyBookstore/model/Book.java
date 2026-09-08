@@ -26,5 +26,5 @@ public class Book {
     private List<Genero> genres;
     private Publisher publisher;
     private Serie serie;
-    private SourceWebsite sourceWebsite;
+    private Source source;
 }
