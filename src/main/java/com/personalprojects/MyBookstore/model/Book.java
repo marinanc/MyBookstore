@@ -23,7 +23,7 @@ public class Book {
     private String linkDownload;
     private String version;
     private List<Author> authors;
-    private List<Genero> genres;
+    private List<Genre> genres;
     private Publisher publisher;
     private Serie serie;
     private Source source;
