@@ -13,4 +13,6 @@ import lombok.Setter;
 public class Author {
     private Long id;
     private String name;
+    private String bio;
+    private Country country;
 }
