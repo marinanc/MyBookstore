@@ -9,8 +9,8 @@
 - Configuration: Properties
 - Java: 25
 - Dependencies:
-	Spring Web
-	Spring Data JPA
-	MySQL Driver
-	Spring Boot Dev Tools
+	Spring Web,
+	Spring Data JPA,
+	MySQL Driver,
+	Spring Boot Dev Tools,
 	Lombok
