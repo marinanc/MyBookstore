@@ -24,6 +24,8 @@ public class Author {
 
     @ManyToOne
     private Country country;
+
+    // Mapped by Book model
     @ManyToMany(mappedBy = "authors")
     private Set<Book> books = new HashSet<>();
 }
