@@ -12,6 +12,6 @@ public class AuthorDTO {
     private Long id;
     private String name;
     private String bio;
-    private Long idCountry;
+    private CountryDTO country;
     private Set<BookDTO> books;
 }
