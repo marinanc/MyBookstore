@@ -1,6 +1,5 @@
 package com.personalprojects.MyBookstore.mapper;
 
-import com.personalprojects.MyBookstore.dto.AuthorRequestDTO;
 import com.personalprojects.MyBookstore.dto.AuthorResponseDTO;
 import com.personalprojects.MyBookstore.model.Author;
 import com.personalprojects.MyBookstore.model.Book;
