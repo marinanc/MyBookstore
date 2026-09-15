@@ -12,4 +12,12 @@ public class PublisherMapper {
                 .name(publisher.getName())
                 .build();
     }
+
+    public static Publisher toEntity(PublisherDTO publisherDTO) {
+        if(publisherDTO == null) return null;
+
+        return Publisher.builder()
+                .name(publisherDTO.getName())
+                .build();
+    }
 }
