@@ -12,4 +12,12 @@ public class GenreMapper {
                 .name(genre.getName())
                 .build();
     }
+
+    public static Genre toEntity(GenreDTO genreDTO) {
+        if(genreDTO == null) return null;
+
+        return Genre.builder()
+                .name(genreDTO.getName())
+                .build();
+    }
 }
