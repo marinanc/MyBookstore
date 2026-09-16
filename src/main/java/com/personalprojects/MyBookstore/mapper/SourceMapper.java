@@ -12,4 +12,12 @@ public class SourceMapper {
                 .name(source.getName())
                 .build();
     }
+
+    public static Source toEntity(SourceDTO sourceDTO) {
+        if(sourceDTO == null) return null;
+
+        return Source.builder()
+                .name(sourceDTO.getName())
+                .build();
+    }
 }
