@@ -12,4 +12,12 @@ public class CountryMapper {
                 .name(country.getName())
                 .build();
     }
+
+    public static Country toEntity(CountryDTO countryDTO) {
+        if(countryDTO == null) return null;
+
+        return Country.builder()
+                .name(countryDTO.getName())
+                .build();
+    }
 }
