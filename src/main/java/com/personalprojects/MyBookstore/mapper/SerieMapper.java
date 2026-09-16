@@ -12,4 +12,12 @@ public class SerieMapper {
                 .name(serie.getName())
                 .build();
     }
+
+    public static Serie toEntity(SerieDTO serieDTO) {
+        if(serieDTO == null) return null;
+
+        return Serie.builder()
+                .name(serieDTO.getName())
+                .build();
+    }
 }

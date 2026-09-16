@@ -28,7 +28,7 @@ public class PublisherService implements IPublisherService {
         Publisher publisher = repo.findById(id)
                 .orElseThrow(() -> new NotFoundException("Editorial no encontrada"));
         publisher.setName(publisherDTO.getName());
-        return PublisherMapper.toDTO(publisher);
+        return PublisherMapper.toDTO(repo.save(publisher));
     }
 
     @Override
