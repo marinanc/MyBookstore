@@ -1,8 +1,10 @@
 package com.personalprojects.MyBookstore.mapper;
 
+import com.personalprojects.MyBookstore.dto.AuthorRequestDTO;
 import com.personalprojects.MyBookstore.dto.AuthorResponseDTO;
 import com.personalprojects.MyBookstore.model.Author;
 import com.personalprojects.MyBookstore.model.Book;
+import com.personalprojects.MyBookstore.model.Country;
 
 import java.util.Collections;
 import java.util.List;
@@ -23,6 +25,16 @@ public class AuthorMapper {
                 .bio(author.getBio())
                 .countryName(author.getCountry() != null ? author.getCountry().getName() : null)
                 .bookTitles(bookTitles)
+                .build();
+    }
+
+    public static Author toEntity(AuthorRequestDTO authorReqDTO, Country authorCountry) {
+        if(authorReqDTO == null) return null;
+
+        return Author.builder()
+                .name(authorReqDTO.getName())
+                .bio(authorReqDTO.getBio())
+                .country(authorCountry)
                 .build();
     }
 }
