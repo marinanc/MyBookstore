@@ -5,13 +5,16 @@ import com.personalprojects.MyBookstore.exception.NotFoundException;
 import com.personalprojects.MyBookstore.mapper.PublisherMapper;
 import com.personalprojects.MyBookstore.model.Publisher;
 import com.personalprojects.MyBookstore.repository.PublisherRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@RequiredArgsConstructor
+@Service
 public class PublisherService implements IPublisherService {
-    @Autowired
-    private PublisherRepository repo;
+
+    private final PublisherRepository repo;
 
     @Override
     public List<PublisherDTO> getPublishers() {

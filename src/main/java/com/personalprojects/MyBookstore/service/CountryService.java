@@ -5,13 +5,16 @@ import com.personalprojects.MyBookstore.exception.NotFoundException;
 import com.personalprojects.MyBookstore.mapper.CountryMapper;
 import com.personalprojects.MyBookstore.model.Country;
 import com.personalprojects.MyBookstore.repository.CountryRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@RequiredArgsConstructor
+@Service
 public class CountryService implements ICountryService{
-    @Autowired
-    private CountryRepository repo;
+
+    private final CountryRepository repo;
 
     @Override
     public List<CountryDTO> getCountries() {

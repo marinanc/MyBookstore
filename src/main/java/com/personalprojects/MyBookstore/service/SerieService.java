@@ -5,13 +5,16 @@ import com.personalprojects.MyBookstore.exception.NotFoundException;
 import com.personalprojects.MyBookstore.mapper.SerieMapper;
 import com.personalprojects.MyBookstore.model.Serie;
 import com.personalprojects.MyBookstore.repository.SerieRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@RequiredArgsConstructor
+@Service
 public class SerieService implements ISerieService{
-    @Autowired
-    private SerieRepository repo;
+
+    private final SerieRepository repo;
 
     @Override
     public List<SerieDTO> getSeries() {

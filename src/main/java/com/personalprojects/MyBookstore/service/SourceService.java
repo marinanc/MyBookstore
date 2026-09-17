@@ -5,13 +5,16 @@ import com.personalprojects.MyBookstore.exception.NotFoundException;
 import com.personalprojects.MyBookstore.mapper.SourceMapper;
 import com.personalprojects.MyBookstore.model.Source;
 import com.personalprojects.MyBookstore.repository.SourceRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@RequiredArgsConstructor
+@Service
 public class SourceService implements ISourceService{
-    @Autowired
-    private SourceRepository repo;
+
+    private final SourceRepository repo;
 
     @Override
     public List<SourceDTO> getSources() {

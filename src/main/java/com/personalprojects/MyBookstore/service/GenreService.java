@@ -5,13 +5,16 @@ import com.personalprojects.MyBookstore.exception.NotFoundException;
 import com.personalprojects.MyBookstore.mapper.GenreMapper;
 import com.personalprojects.MyBookstore.model.Genre;
 import com.personalprojects.MyBookstore.repository.GenreRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@RequiredArgsConstructor
+@Service
 public class GenreService implements IGenreService{
-    @Autowired
-    private GenreRepository repo;
+
+    private final GenreRepository repo;
 
     @Override
     public List<GenreDTO> getGenres() {
