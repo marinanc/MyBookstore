@@ -25,6 +25,7 @@ public class BookMapper {
                     .toList();
 
         return BookResponseDTO.builder()
+                .id(book.getId())
                 .title(book.getTitle())
                 .isbnEbook(book.getIsbnEbook())
                 .isbnPrint(book.getIsbnPrint())

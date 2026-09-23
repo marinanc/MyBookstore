@@ -9,6 +9,7 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 public class BookResponseDTO {
+    private Long id;
     private String title;
     private String isbnEbook;
     private String isbnPrint;
