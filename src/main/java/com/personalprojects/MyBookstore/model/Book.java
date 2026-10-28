@@ -27,6 +27,7 @@ public class Book {
     private String synopsis;
     private String linkDownload;
     private String version;
+    private String bookCover;
 
     @ManyToMany
     private Set<Author> authors = new HashSet<>();

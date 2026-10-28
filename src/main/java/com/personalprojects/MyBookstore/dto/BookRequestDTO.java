@@ -17,6 +17,7 @@ public class BookRequestDTO {
     private String synopsis;
     private String linkDownload;
     private String version;
+    private String bookCover;
     private Set<Long> authorIds;
     private Set<Long> genreIds;
     private Long idPublisher;

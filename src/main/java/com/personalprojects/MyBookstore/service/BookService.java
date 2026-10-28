@@ -79,6 +79,7 @@ public class BookService implements IBookService{
         book.setSynopsis(bookReqDTO.getSynopsis());
         book.setLinkDownload(bookReqDTO.getLinkDownload());
         book.setVersion(bookReqDTO.getVersion());
+        book.setBookCover(bookReqDTO.getBookCover());
         book.setAuthors(bookAuthors);
         book.setGenres(bookGenres);
         book.setPublisher(publisherBook);

@@ -18,6 +18,7 @@ public class BookResponseDTO {
     private String synopsis;
     private String linkDownload;
     private String version;
+    private String bookCover;
     private List<String> authorNames;
     private List<String> genreNames;
     private String publisherName;

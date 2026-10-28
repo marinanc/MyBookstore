@@ -18,6 +18,7 @@ public class BookDTO {
     private String synopsis;
     private String linkDownload;
     private String version;
+    private String bookCover;
     private Set<AuthorDTO> authors;
     private Set<GenreDTO> genres;
     private Long idPublisher;
